@@ -11,4 +11,8 @@ ol{
 
 li{
     font-weight: 600;
+} 
+
+li p{
+    font-weight: 400;
 }
