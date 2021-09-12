@@ -1,0 +1,124 @@
+/* layout */
+#content{
+    /* margin-top: 40px; */
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    /* align-items: center; */
+    width:50%;
+    margin: 3rem auto;
+    /* border: 1px solid red; */
+}
+h1, h2{
+    margin-left: 10%;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+h1{
+    font-size: 6rem;
+}
+h2{
+    font-size: 2rem;
+}
+
+/* text styling */
+.line{
+    display: block;
+    line-height:25px;
+}
+.name{
+    color: grey;
+    font-style: italic;
+}
+*{
+    font-family: 'DM Sans', sans-serif;
+}
+.section{
+    padding: 15px;
+}
+
+/* background styling */
+body{
+    background-color: #fffef7;
+    margin-top: 90px;
+    overflow-x: hidden;
+}
+.section{
+    background-color: rgba(255, 255, 255, 0.87);
+    /* border-radius: 5px; */
+    box-shadow: .5rem .5rem 0 -1px black;
+    position: relative;
+    border: 1px solid #a8a592;
+}
+
+.section.intro{
+    box-shadow: .5rem .5rem 0 -1px #b8a795;
+}
+.section.verse{
+    box-shadow: .5rem .5rem 0 -1px #8a947f;
+}
+.section.pre-chorus{
+    box-shadow: .5rem .5rem 0 -1px #a479b0;
+}
+.section.chorus{
+    box-shadow: .5rem .5rem 0 -1px #61798f;
+}
+.section.bridge{
+    box-shadow: .5rem .5rem 0 -1px #c7ae3e;
+}
+
+
+
+.background{
+    position: absolute !important;
+    z-index: -1;
+    width: fit-content;
+    white-space: nowrap;
+}
+
+.background.intro{
+    font-size: 15rem;
+    left: -30%;
+    bottom: -90px;
+    font-weight: 600;
+    color: #e6d5c3;
+}
+.background.verse{
+    font-size: 10rem;
+    width:fit-content;
+    left:20%;
+    bottom: 60px;
+    font-weight:600;
+    color: #adb5a5;
+}
+.background.pre-chorus{
+    font-size: 11rem;
+    width:fit-content;
+    left:-90%;
+    bottom: -40px;
+    font-weight: 600;
+    color: #eac7ed;
+}
+.background.chorus1{
+    font-size: 11rem;
+    width:fit-content;
+    left:-10%;
+    bottom: 90px;
+    font-weight: 600;
+    color: #9dc6ed;
+}
+.background.chorus2{
+    font-size: 11rem;
+    left:20%;
+    bottom: -40px;
+    font-weight: 600;
+    color: #9dc6ed;
+}
+.background.bridge{
+    font-size: 11rem;
+    left:-50%;
+    bottom: -40px;
+    font-weight: 600;
+    color: #f5d64c;
+}
