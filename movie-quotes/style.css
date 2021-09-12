@@ -1,0 +1,63 @@
+/* general layout */
+body{
+    width: 80%;
+    max-width: 1100px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    column-gap: 4rem;
+}
+
+div.container{
+    margin: 40px 0;
+    font-family: 'Courier New', Courier, monospace;
+    align-items: center;
+}
+
+.scene{
+    color: grey;
+    font-weight: 600;
+}
+
+
+/* heading styles */
+h1, h2{
+    text-align: center;
+}
+h1{
+    margin-top: 90px;
+    text-transform: uppercase;
+}
+
+
+/* script styling */
+div.speaker{
+    display: block;
+    width:50%;
+    text-align: center;
+    font-weight: 600;
+    height: fit-content;
+    /* border:1px solid red; */
+}
+
+p.speech{
+    display: block;
+    margin: 0;
+    width:60%;
+}
+
+span.desc{
+    font-style: italic;
+    display: block;
+    margin-bottom:5px;
+}
+
+div.action{
+    align-items: flex-start;
+    font-style: italic;
+}
+ 
