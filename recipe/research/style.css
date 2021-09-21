@@ -1,0 +1,34 @@
+*{
+    font-family: 'Red Hat Text', sans-serif;
+}
+h1, p{
+    margin-left:40px;
+}
+body>p{
+    width:30%;
+}
+
+body .flex{
+    margin-top:20px;
+    display: flex;
+    column-gap: 20px;
+    /* flex-direction: column; */
+}
+
+.flex div{
+    padding-left:40px;
+    padding-right:40px;
+}
+.left{
+    width:30%;
+    border-right: 5px solid black;
+}
+.right{
+    width:60%;
+    
+}
+
+img{
+    width:200px;
+    /* height:400px; */
+}
