@@ -1,0 +1,132 @@
+
+*{
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+
+
+/* LAYOUT */
+.center{
+    /* border: 1px solid red; */
+    margin-left: auto;
+    width:960px;
+    margin-right: auto;
+}
+
+.center h1,
+.center h2,
+.center h3
+{
+    text-align: center;
+}
+
+
+h1, h2, h3, h4{
+    margin: 0;
+}
+
+h1{
+    font-size: 80px;
+}
+h3{
+    margin-top:-3px;
+    font-size:30px;
+}
+h2{
+    margin-bottom:33px;
+    font-size:40px;
+}
+h4{
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+
+header div{
+    padding-top: 151px;
+    padding-bottom: 185px;
+}
+
+section > div{
+    padding: 39px 0;
+}
+p{
+    font-size: 18px;
+}
+
+/* SECTION ONE */
+header{
+    background-image: url('images/sml1.jpeg');
+    background-position-x: center;
+    background-position-y: 40%;
+}
+
+/* SECTION TWO */
+.sectionImageText{
+    background: #f2fbff;   
+}
+img.sidebar-img{
+    width: 400px;
+    height: 300px;
+    float: right;
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+
+
+/* SECTION THREE GRID */
+.section,
+.sectionGrid .content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.imageText{
+    width:50%;
+    display: flex;
+    margin-bottom:24px;
+}
+.imageText img{
+    width: 200px;
+    height: 150px;
+}
+
+.imageText .caption{
+    margin-left: 12px;
+    width: 50%;
+}
+
+.imageText .caption p{
+    margin: 0;
+}
+.sectionGrid{
+    background:rgb(235, 245, 255);
+}
+
+
+/* SECTION FOUR */
+.sectionText{
+    padding-top: 2px;
+    padding-bottom:40px;
+}
+.sectionText .content {
+    text-align: center;
+    width: 707px;
+}
+.sectionText .content p{
+    /* padding-top: 2px; */
+    font-size: 26px;
+    /* visibility: hidden; */
+}
+.sectionText{
+    background: rgb(240, 237, 255);
+}
+
+/* SECTION FIVE */
+footer {
+    font-size: 18px;
+    height:110px;
+    background: rgb(254, 255, 248);
+}
+
+footer div{
+    padding-top: 42px;
+}
