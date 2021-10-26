@@ -1,0 +1,363 @@
+/* =========== RESET ======== */
+h1, h2, h3,
+p {
+    margin:0;
+}
+
+/* =========== GENERAL LAYOUT =========== */
+*{
+    font-family: 'Quicksand', sans-serif;
+}
+body{
+    margin:0;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    /* column-gap: 30px; */
+}
+
+p{
+    margin: 20px 0;
+}
+
+p:first-child{
+    margin-top: 0px;
+}
+
+body > .flex{
+    height:auto;
+}
+
+#topBar{
+    background: rgba(255, 209, 143, 0.3);
+    position:fixed;
+    top:0;
+    left:0;
+    height:150px;
+    width: 100vw;
+    z-index: -10;
+}
+
+.centerText{
+    text-align: center;
+}
+
+/* =========== SIDE MENU =========== */
+
+#sideMenuButton{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    font-size: 30px;
+}
+
+#sideMenu{
+    position: fixed;
+    top:90px;
+    right: 0;
+    padding-top:20px;
+    height: 80vh;
+    width: 70%;
+    padding-right: 20px;
+    padding-left:20px;
+    overflow-y: scroll;
+    background-color: #ffdeb0;
+    z-index: 0;
+}
+#sideMenu *{
+    font-size: 13px;
+}
+
+#sideMenu ul{
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.hide{
+    display: none;
+    transition: 0ms;
+}
+
+/* =========== TYPE LAYOUR  =========== */
+h1{
+    font-size: 60px;
+    margin: 35px 0;
+    width:100%;
+}
+h2{
+    font-size:25px;
+}
+ul{
+    font-size: 16px;
+}
+
+/* =========== LISTS =========== */
+ul.noShow li{
+    display: block;
+}
+
+ul{
+    padding-left:20px;
+}
+ul.noShow{
+    padding:0px;
+}
+
+ul li{
+    padding-left:0px;
+}
+
+.left{
+    background: rgba(255, 209, 143, 0.3);
+    height: 100vh;
+    position: sticky;
+    top:0;
+    padding-left:50px;
+    padding-right:50px;
+    width: 40%;
+    overflow: scroll;
+}
+
+.left .flex .column:first-child{
+    width: 40%;
+    max-width: 180px;
+}
+.left .flex .column:nth-child(2){
+    width: 60%;
+}
+
+.left .flex .column li{
+    margin-bottom: 5px;
+}
+.right{
+    width:60%;
+    margin-top: 150px;
+
+}
+
+/* =========== SECTIONS =========== */
+section:not(.recipeCard section){
+    padding-top:60px;
+    margin-bottom:60px;
+}
+.right section{
+    width: 75%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.singleImg{
+    width:70%;
+}
+
+.imgBlock{
+    /* width:90%; */
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.imgGrid{
+    display: flex;
+    column-gap: 10px;
+    height: 250px;
+}
+.imgGrid .column{
+    height:100%;
+    /* width:30%; */
+    /* border:1px solid red; */
+}
+
+.doubleImg .image{
+    height:48%;
+    border-radius: 40px;
+}
+
+.doubleImg .image:first-child{
+    margin-bottom: 5%;
+}
+
+
+img{
+    display: block;
+    width:100%;
+}
+
+
+/* ========== RECEIPE CARD =========*/
+.recipeCard{
+    /* width:80% !important; */
+    background-color:rgba(255, 209, 143, 0.3);
+    border-radius:50px;
+    padding-bottom:90px;
+}
+.recipeCard section{
+    width:60%;
+}
+
+
+/* ========== PUT IN IMAGES =========*/
+.image{
+    background-size: cover;
+    background-position-x: center;
+    border-radius: 50px;
+}
+
+.onion{
+    background-image: url('images/onion.jpeg');
+}
+.kimchi{
+    background-image: url('images/kimchi.jpeg');
+}
+.gronion{
+    background-image: url('images/gronion2.jpeg');
+}
+.bacon{
+    background-image: url('images/bacon.jpeg');
+}
+#tofu{
+    background-image: url('images/tofu.jpeg');
+}
+#tofu2{
+    background-image: url('images/tofu2.jpeg');
+}
+#dish1{
+    background-image: url('images/dish1.jpeg');
+}
+#dish2{
+    background-image: url('images/dish2.jpeg');
+}
+
+.md-show, .sm-show{
+    display:none;
+}
+
+
+/* ========== MEDIA QUERIES =========*/
+
+@media (max-width: 1070px) {
+    h1 { 
+        font-size: 50px; 
+    }
+}
+
+/* tablet size */
+@media (max-width: 905px) {
+    .left .flex{
+        flex-direction: column;
+        padding:0;
+    }
+    .left .flex .column{
+        width:100% !important;
+    }
+    .singleImg{
+        width: 100%;
+    }
+
+    h1 { 
+        margin-top:10px;
+    }
+    .imgGrid{
+        flex-direction: column;
+        height:300px;
+    }
+    .lg-hide .imgGrid .column{
+        width:100%;
+    }
+    .image{
+        background-size: cover;
+        background-position-y: center;
+        border-radius: 50px;
+        margin-bottom: 10px;
+    }
+
+    .lg-show, .sm-who{
+        display:none;
+    }
+    .md-show{
+        display:block;
+    }
+    
+}
+
+/* SMALL SCREEN (INCLUDING MOBILE) */
+@media (max-width: 600px) {
+    body > .flex{
+        flex-direction: column;
+        background:rgba(255, 209, 143, 0.3)
+    }
+    .column{
+        width: 100%;
+    }
+    
+    .left{
+        position: unset;
+        padding-top:30px;
+        padding-left: unset;
+        padding-right: unset;
+        background: unset;
+    }
+    
+    .left.column{
+        height: auto;
+        overflow: visible;
+    }
+
+    .left .flex .column{
+        width:80% !important;
+        margin-left: 50px;
+
+    }
+
+    h1{
+        position: sticky;
+        top:20px;
+        margin-bottom: 10px;
+        padding-left: 50px;
+        max-width: 80%;
+    }
+    h2{
+        margin-bottom: 10px;
+    }
+
+    #topBar{
+        height:90px;
+        background: #FCE9CA;
+        z-index: 0;
+        /* width:1; */
+    }
+
+    .left .flex .column{
+        /* max-width:0%; */
+    }
+
+    .right{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: unset;
+    }
+
+    .right section{
+        padding-top: 0 !important;
+    }
+
+    .lg-show, .md-show{
+        display: none;
+    }
+    .sm-show{
+        display: block;
+    }
+
+}
+
+@media (max-width: 402px) {
+    h1{
+        font-size: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
