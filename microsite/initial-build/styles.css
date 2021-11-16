@@ -1,0 +1,36 @@
+/* NAVIGATION */
+nav{
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+}
+nav a{
+    display: block;
+}
+
+/* GENERAL */
+img:not(.icon){
+    width: 100%;
+}
+body{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* INTRO PAGE */
+.intro .imageHeader{
+    height: 300px;
+    width: auto;
+}
+.intro .intro-top{
+    display: flex;
+    /* border:1px solid red; */
+}
+.intro .intro-top .imageDiv{
+    /* width:50%; */
+    height: 300px;
+    overflow: hidden;
+}
+.intro div:not(.imageDiv){
+    margin: 0px 30px;
+}
