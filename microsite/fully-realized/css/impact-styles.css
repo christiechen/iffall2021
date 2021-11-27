@@ -1,0 +1,53 @@
+.impact h2{
+    color: var(--impact-color-bright) !important;
+}
+.impact h2 .horizontalLine.right{
+    width: 85%;
+    background-color: var(--impact-color) !important;
+}
+@media (max-width:1300px){
+    .impact h2 .horizontalLine.right{
+        width: 85%;
+    }
+}
+@media (max-width:1200px){
+    .impact h2 .horizontalLine.right{
+        width: 80%;
+    }
+}
+@media (max-width: 950px){
+    .impact h2 .horizontalLine.right{
+        width: 75%;
+    }
+}
+
+.article a{
+    font-family: var(--serif);
+    display: block;
+    padding-left:20px;
+    font-size: 25px;
+    color: #EFAD99;   
+}
+#impact-2{
+    position:absolute;
+    opacity: 0.2;
+    width:50%;
+    left:-80px;
+    top:-140px;
+    z-index: -10;
+}
+#smoke1{
+    position:absolute;
+    bottom:-50px;
+    right:-50px;
+    width:900px;
+    z-index: -50;
+}
+footer{
+    background-color: var(--impact-color);
+}
+@media (max-width: 600px){
+    #smoke1{
+        opacity: 0.8;
+    }
+}

@@ -1,0 +1,69 @@
+.labor h2{
+    color: var(--labor-color-bright) !important;
+}
+.labor h2 .horizontalLine.right{
+    width: 85%;
+    background-color: var(--labor-color) !important;
+}
+@media (max-width:1300px){
+    .labor h2 .horizontalLine.right{
+        width: 85%;
+    }
+}
+@media (max-width:1200px){
+    .labor h2 .horizontalLine.right{
+        width: 80%;
+    }
+}
+@media (max-width: 950px){
+    .labor h2 .horizontalLine.right{
+        width: 75%;
+    }
+}
+.pin {
+    height:50px;
+    vertical-align: middle;
+}
+
+h3{
+    color: var(--labor-color-bright);
+}
+.labor .article{
+    float:left;
+    width:40%;
+    margin: 40px 40px 0px 0px;
+    position: relative;
+    height:700px;
+    top:100px;
+}
+.article img:not(.source){
+    left:0;
+    top:80px;
+}
+.article .source{
+    width: 50%; 
+    position: relative;
+    left: 50px;
+    margin-bottom: 10px;
+    
+}
+.article a{
+    font-family: var(--serif);
+    display: block;
+    position: relative;
+    /* width:400px; */
+    font-size: 25px;
+    color: #74B0B8;
+    padding-left: 0 !important;
+}
+.indent-p p{
+    margin-left:47%;
+}
+footer{
+    background-color: var(--labor-color);
+}
+@media (max-width: 600px){
+    .pin{
+        height: 30px;
+    }
+}
