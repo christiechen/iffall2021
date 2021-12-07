@@ -1,0 +1,3 @@
+check breakpoint 1440 --> margins
+add hover states on carousel button
+font size a bit bigger on mobile

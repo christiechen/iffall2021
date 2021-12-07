@@ -1,0 +1,45 @@
+
+.origins h2{
+    color: var(--origins-color-bright) !important;
+}
+.origins h2 .horizontalLine.right{
+    width: 85%;
+    background-color: var(--origins-color) !important;
+}
+@media (max-width:1300px){
+    .origins h2 .horizontalLine.right{
+        width: 80%;
+    }
+}
+@media (max-width:1200px){
+    .origins h2 .horizontalLine.right{
+        width: 75%;
+    }
+}
+@media (max-width: 950px){
+    .origins h2 .horizontalLine.right{
+        width: 73%;
+    }
+}
+
+.origins .scrollBar{
+    background-color: var(--origins-color);
+}
+
+#zara{
+    position:absolute;
+    left:-15%;
+    top:-90px;
+    width:75%;
+    z-index: -10;
+}
+#hm{
+    position:absolute;
+    right:0px;
+    top:-200px;
+    width:65%;
+    z-index: -10;
+}
+footer{
+    background-color: var(--origins-color);
+}
